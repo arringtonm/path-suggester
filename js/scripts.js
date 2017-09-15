@@ -11,9 +11,6 @@ $(document).ready(function() {
     var question4 = parseInt($("input:radio[name=question4]:checked").val());
     var question5 = parseInt($("input:radio[name=question5]:checked").val());
 
-
-
-
     if (question1 === 1) {
       scoreDesign++;
     } else if (question1 === 2) {
@@ -22,7 +19,6 @@ $(document).ready(function() {
     } else if (question3 === 3) {
       scoreRuby++;
     }
-
     if (question2 === 1) {
       scoreBackend++;
       scoreCsharp++;
@@ -31,14 +27,11 @@ $(document).ready(function() {
     } else if (question2 === 3) {
       scoreRuby++;
     }
-
     if (question3 === 1) {
       scoreCsharp++;
     } else if (question3 === 2) {
       scoreRuby++;
     }
-
-
 
     if (scoreDesign === scoreBackend) {
       var result = "Your score is a tie! You show equal preference for back-end and front-end and will make a fabulous engineer however you end up. Fortunately for you, Epicodus' programs should prepare you to be a well-rounded programmer in whatever path you choose!";
@@ -55,15 +48,17 @@ $(document).ready(function() {
       $("#answers").text(result);
       }
     }
-
     $("#answers").removeClass();
     $("#quiz").hide();
-
     event.preventDefault();
   });
 });
 
 $(document).ready(function() {
+  $("#part0part1").click(function() {
+    $("#part1").removeClass();
+    $("#part0").hide();
+  });
   $("#part1part2").click(function() {
     $("#part1").hide();
     $("#part2").removeClass();
