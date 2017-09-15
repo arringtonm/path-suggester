@@ -1,0 +1,7 @@
+
+.nextpage {
+  font-weight: bold;
+}
+.nextpage:hover {
+  text-decoration: underline;
+}

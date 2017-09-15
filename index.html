@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Which programming language should you learn?</title>
   </head>
   <body>
@@ -14,97 +14,132 @@
       <form id="quiz">
 
 
-        <div id="page1">
+        <div id="part1">
           <h3>Is form as important to you as functionality?</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="question1" value="answer1">
+              <input type="radio" name="question1" value="1" checked>
               I am strongly concerned with aesthetics and user experience.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question1" value="answer2">
+              <input type="radio" name="question1" value="2">
               I prefer to focus on the heavy-lifting "underneath the hood."
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question1" value="answer3">
+              <input type="radio" name="question1" value="3">
               I want to control the entire user experience, both front and back.
             </label>
           </div>
+          <p id="part1part2" class="nextpage">Next
+          </p>
         </div>
 
 
-        <div id="page2"> <!-- add class="hidden" -->
+        <div id="part2" class="hidden">
           <h3>When you're thinking of a potential project, what are your first thoughts?</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="answer1">
+              <input type="radio" name="question2" value="1" checked>
               I start working out the functionality first; I can make it pretty later.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="answer2">
+              <input type="radio" name="question2" value="2">
               I think of the look, the feel and the branding of the project.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="answer3">
+              <input type="radio" name="question2" value="3">
               I have an entire app in mind with both interface and functionality.
             </label>
           </div>
+          <p id="part2part3" class="nextpage">Next
+          </p>
         </div>
 
 
-        <div id="page3"> <!-- add class="hidden" -->
+        <div id="part3" class="hidden">
           <h3>Do you see yourself working with established companies or prefer a more nimble startup?</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="answer1">
+              <input type="radio" name="question3" value="1" checked>
               I would like to work for the big players.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="answer2">
+              <input type="radio" name="question3" value="2">
               I want to get in at the ground floor and help grow a company.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="answer3">
+              <input type="radio" name="question3" value="3">
               I am comfortable in either type of environment.
             </label>
           </div>
+          <p id="part3part4" class="nextpage">Next
+          </p>
         </div>
 
-        <div id="page4"> <!-- add class="hidden" -->
+        <div id="part4" class="hidden">
           <h3>Are you drawn to the cutting edge or the tried and true?</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="answer1">
+              <input type="radio" name="question4" value="1" checked>
               I am an early adopter and want to stay up on the new trends.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="answer2">
+              <input type="radio" name="question4" value="2">
               I want to work with a language that has proven to be reliable and lasting.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="answer3">
-              I could go either way -- I want to work with a language that is flexible. 
+              <input type="radio" name="question4" value="3">
+              I could go either way -- I want to work with a language that is flexible.
             </label>
           </div>
+          <p id="part4part5" class="nextpage">Next
+          </p>
         </div>
 
-      </form> <!-- container -->
+        <div id="part5" class="hidden">
+          <h3>Dummy question in a headline here</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="1" checked>
+              I think that's a stupid headline above here.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="2">
+              I disagree; it is worse than stupid.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="3">
+              I think it's just filler text and I don't feel either way.
+            </label>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </div>
+
+      </form>
+
+      <div id="answers" class="hidden">
+      </div>
+
     </div>
   </body>
 </html>
