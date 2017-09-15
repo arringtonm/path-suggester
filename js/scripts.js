@@ -34,7 +34,7 @@ $(document).ready(function() {
     }
 
     if (scoreDesign === scoreBackend) {
-      var result = "Your score is a tie! You show equal preference for back-end and front-end and will make a fabulous engineer however you end up. Fortunately for you, Epicodus' programs should prepare you to be a well-rounded programmer in whatever path you choose!";
+      var result = "Your score is a tie! You show equal preference for back-end and front-end and will make a fabulous engineer however you end up. Fortunately for you, no developer exists in a vacuum and you will have to have strong skillsets in both front-end and back-end coding to achieve your wishes. Also fortunately for you, Epicodus' programs should prepare you to be a well-rounded programmer in whatever path you choose!";
       $("#answers").text(result);
     } else if (scoreDesign > scoreBackend) {
       var result = "Your preference is to be a front-end designer! Your inclination for good aesthetics and the users' experience should send you down the path to study more CSS.";
