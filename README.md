@@ -1,5 +1,7 @@
 # Epicodus Path Suggester
 
+## https://arringtonm.github.io/path-suggester/
+
 #### Created by Michael Arrington
 
 This webpage is a tool built to assist potential students of Epicodus with the task of picking which curriculum path is their best fit. Users answer questions about their preferences relating to software design and philosophy towards technology and associated workplaces and are presented with a simple analysis and advice on how to move forward. It was created on September 15, 2017.
